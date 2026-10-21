@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Zebra Teambuilding 2026 – Brno</title>
+<meta name="description" content="You are invited to the Zebra team building on 21 October 2026 in Brno.">
+<style>
+  :root {
+    --bg: #ffffff;
+    --fg: #111111;
+    --muted: #555555;
+    --card: #f4f4f4;
+    --accent: #ffd100;
+    --accent-fg: #111111;
+    --stripe-a: #111111;
+    --stripe-b: #ffffff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0d0d0d;
+      --fg: #f5f5f5;
+      --muted: #b0b0b0;
+      --card: #1b1b1b;
+      --stripe-a: #f5f5f5;
+      --stripe-b: #0d0d0d;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    background: var(--bg);
+    color: var(--fg);
+    line-height: 1.6;
+  }
+  .stripes {
+    height: 18px;
+    background: repeating-linear-gradient(135deg, var(--stripe-a) 0 14px, var(--stripe-b) 14px 28px);
+  }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 16px; }
+  header.hero { padding: 72px 0 56px; text-align: center; }
+  .eyebrow {
+    display: inline-block;
+    background: var(--accent);
+    color: var(--accent-fg);
+    font-weight: 700;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    font-size: .8rem;
+    padding: 6px 14px;
+    border-radius: 999px;
+  }
+  h1 { font-size: clamp(2.2rem, 7vw, 4rem); line-height: 1.1; margin: 20px 0 16px; }
+  .lead { font-size: 1.2rem; color: var(--muted); max-width: 600px; margin: 0 auto 32px; }
+  .btn {
+    display: inline-block;
+    background: var(--accent);
+    color: var(--accent-fg);
+    font-weight: 700;
+    text-decoration: none;
+    padding: 14px 28px;
+    border-radius: 8px;
+  }
+  .btn:hover, .btn:focus-visible { filter: brightness(.92); }
+  section { padding: 40px 0; }
+  h2 { font-size: 1.6rem; margin: 0 0 20px; }
+  .facts { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+  .card { background: var(--card); border-radius: 12px; padding: 24px; border-left: 6px solid var(--accent); }
+  .card .label { font-size: .8rem; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); }
+  .card .value { font-size: 1.5rem; font-weight: 700; margin-top: 4px; }
+  .card .note { color: var(--muted); font-size: .95rem; margin-top: 4px; }
+  ul.why { padding-left: 1.2rem; }
+  ul.why li { margin-bottom: 8px; }
+  .contact { text-align: center; }
+  .contact a { color: inherit; font-weight: 700; }
+  footer { text-align: center; color: var(--muted); font-size: .9rem; padding: 32px 0 40px; }
+</style>
+</head>
+<body>
+  <div class="stripes" aria-hidden="true"></div>
+
+  <header class="hero">
+    <div class="wrap">
+      <span class="eyebrow">You're invited</span>
+      <h1>Zebra Teambuilding 2026</h1>
+      <p class="lead">Step away from the desk, meet your colleagues in a relaxed setting and spend a great day together in Brno.</p>
+      <a class="btn" href="#contact">Questions? Get in touch</a>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section aria-labelledby="details">
+      <h2 id="details">Event details</h2>
+      <div class="facts">
+        <div class="card">
+          <div class="label">Date</div>
+          <div class="value">
+            <time datetime="2026-10-21">21 October 2026</time>
+          </div>
+          <div class="note">Wednesday</div>
+        </div>
+        <div class="card">
+          <div class="label">Place</div>
+          <div class="value">Brno</div>
+          <div class="note">Czech Republic</div>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="about">
+      <h2 id="about">What to expect</h2>
+      <p>An informal day for the whole team: shared activities, good food and time to talk about anything other than work. Everyone is welcome, whatever team or role you are in.</p>
+      <ul class="why">
+        <li>Get to know colleagues from other teams</li>
+        <li>Fun activities and friendly competition</li>
+        <li>Refreshments and a chance to relax together</li>
+      </ul>
+      <p>The detailed schedule and meeting point will be shared by email before the event.</p>
+    </section>
+
+    <section id="contact" class="contact" aria-labelledby="contact-h">
+      <h2 id="contact-h">Contact</h2>
+      <div class="card" style="border-left:0; border-top:6px solid var(--accent);">
+        <p style="margin:0 0 8px;">For any questions about the event, please contact:</p>
+        <p style="margin:0; font-size:1.2rem;"><strong>Jiří Jireš</strong></p>
+        <p style="margin:0;"><a href="mailto:jirijires@gmail.com">jirijires@gmail.com</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">See you in Brno! 🦓</div>
+  </footer>
+
+  <div class="stripes" aria-hidden="true"></div>
+</body>
+</html>
